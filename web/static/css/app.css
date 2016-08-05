@@ -70,3 +70,7 @@ form.link, form.button {
     border-bottom: 0;
   }
 }
+
+.panel-body {
+  overflow:auto;
+}

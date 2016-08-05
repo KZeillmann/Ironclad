@@ -52,6 +52,9 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
+    },
+    copycat: {
+      "fonts": ["node_modules/font-awesome/fonts"]
     }
   },
 
@@ -65,7 +68,10 @@ exports.config = {
     enabled: true,
     // Whitelist the npm deps to be pulled in as front-end assets.
     // All other deps in package.json will be excluded from the bundle.
-    whitelist: ["phoenix", "phoenix_html"],
-    styles: {bootstrap: ["dist/css/bootstrap.css"]}
+    whitelist: ["phoenix", "phoenix_html", "jquery", "bootstrap"],
+    styles: {
+      bootstrap: ["dist/css/bootstrap.css"],
+      "font-awesome": ["css/font-awesome.css"]
+    }
   }
 };
