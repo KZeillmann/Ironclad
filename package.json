@@ -6,7 +6,7 @@
     "watch": "brunch watch --stdin"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.3",
+    "bootstrap": "4.0.0-alpha.2",
     "copycat-brunch": "^1.1.0",
     "font-awesome": "^4.6.3",
     "phoenix": "file:deps/phoenix",
