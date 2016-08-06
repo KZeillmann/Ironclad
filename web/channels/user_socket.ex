@@ -2,7 +2,7 @@ defmodule Ironclad.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", Ironclad.RoomChannel
+  # channel "room:*", Ironclad.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

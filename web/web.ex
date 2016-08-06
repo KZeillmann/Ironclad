@@ -22,7 +22,7 @@ defmodule Ironclad.Web do
 
       import Ecto
       import Ecto.Changeset
-      import Ecto.Query, only: [from: 1, from: 2]
+      import Ecto.Query
     end
   end
 
@@ -32,7 +32,7 @@ defmodule Ironclad.Web do
 
       alias Ironclad.Repo
       import Ecto
-      import Ecto.Query, only: [from: 1, from: 2]
+      import Ecto.Query
 
       import Ironclad.Router.Helpers
       import Ironclad.Gettext
@@ -67,7 +67,7 @@ defmodule Ironclad.Web do
 
       alias Ironclad.Repo
       import Ecto
-      import Ecto.Query, only: [from: 1, from: 2]
+      import Ecto.Query
       import Ironclad.Gettext
     end
   end
