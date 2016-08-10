@@ -15,33 +15,51 @@
     <div class="container">
       <header class="header">
         <nav role="navigation" class="navbar navbar-light bg-faded">
-          <a class="navbar-brand" href="/">Ironclad</a>
-          <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            &#9776;
-          </button>
-          <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
-            <ul class="nav navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-cogs"></i> Security<b class="caret"></b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-database"></i> Sources<b class="caret"></b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-bar-chart fa-fw"></i> Slices</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-dashboard"></i> Dashboards</a>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav pull-right">
-              <li class="nav-item">
-                <a class="nav-link" href="//github.com/KZeillmann/ironclad">
-                  <i class="fa fa-lg fa-github"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">Ironclad</a>
+            <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              &#9776;
+            </button>
+            <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
+              <ul class="nav navbar-nav">
+                <li class="nav-item btn-group">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs"></i> Security<b class="caret"></b></a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-user"></i> List Users</a>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-group"></i> List Roles</a>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-bar-chart-o"></i> User's Statistics</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-lock"></i> Base Permissions</a>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-list-alt"></i> Views/Menus</a>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-link"></i> Permission on Views/Menus</a>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-list-ol"></i> Action Log</a>
+                  </div>
+                </li>
+                <li class="nav-item btn-group">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-database"></i> Sources<b class="caret"></b></a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-database"></i> Databases</a>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-css3"></i> CSS Templates</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-bar-chart fa-fw"></i> Slices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-dashboard"></i> Dashboards</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav pull-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="//github.com/KZeillmann/ironclad">
+                    <i class="fa fa-lg fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+
         </nav>
       </header>
 
