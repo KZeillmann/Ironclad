@@ -11,3 +11,4 @@
     <!-- TODO: Use Bootstrap datatables -->
   </div>
 </div>
+<%= link "Playground", to: "/playground" %>

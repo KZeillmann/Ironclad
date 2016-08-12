@@ -1,0 +1,24 @@
+<table class="table table-bordered table-hover">
+  <thead class="thead-inverse">
+    <tr>
+      <%= for column <- @query_result.columns do %>
+        <th>
+          <%= column %>
+        </th>
+      <%= end %>
+    </tr>
+  </thead>
+  <tbody class="table-striped">
+    <%= for row <- @query_result.rows do %>
+      <tr>
+        <%= for element <- row do %>
+          <td>
+            <%= element %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+<%= link "Back", to: "/playground" %>

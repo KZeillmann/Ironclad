@@ -1,0 +1,20 @@
+<%= form_for @conn, playground_path(@conn, :index), [as: :query], fn f -> %>
+  <div class="form-group">
+    <%= textarea f, :query_text, placeholder: "Query string" %>
+  </div>
+  <div class="form-group">
+    <%= text_input f, :connection_string, placeholder: "Hostname" %>
+  </div>
+  <div class="form-group">
+    <%= text_input f, :database, placeholder: "Database" %>
+  </div>
+  <div class="form-group">
+    <%= text_input f, :username, placeholder: "Username" %>
+  </div>
+  <div class="form-group">
+    <%= text_input f, :password, placeholder: "Password" %>
+  </div>
+
+
+  <%= submit "Query", class: "btn btn-primary" %>
+ <% end %>
