@@ -1,0 +1,36 @@
+<h2>Listing databases</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Port</th>
+      <th>Location</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for database <- @databases do %>
+    <tr>
+      <td><%= database.type %></td>
+      <td><%= database.name %></td>
+      <td><%= database.username %></td>
+      <td><%= database.password %></td>
+      <td><%= database.port %></td>
+      <td><%= database.location %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: database_path(@conn, :show, database), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: database_path(@conn, :edit, database), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: database_path(@conn, :delete, database), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New database", to: database_path(@conn, :new) %>

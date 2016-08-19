@@ -19,6 +19,7 @@ defmodule Ironclad.Router do
     get "/", PageController, :index
     get "/playground", PlaygroundController, :index
     post "/playground", PlaygroundController, :query
+    resources "/databases", DatabaseController
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,38 @@
+<h2>Show database</h2>
+
+<ul>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @database.type %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @database.name %>
+  </li>
+
+  <li>
+    <strong>Username:</strong>
+    <%= @database.username %>
+  </li>
+
+  <li>
+    <strong>Password:</strong>
+    <%= @database.password %>
+  </li>
+
+  <li>
+    <strong>Port:</strong>
+    <%= @database.port %>
+  </li>
+
+  <li>
+    <strong>Location:</strong>
+    <%= @database.location %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: database_path(@conn, :edit, @database) %>
+<%= link "Back", to: database_path(@conn, :index) %>

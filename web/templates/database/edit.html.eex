@@ -1,0 +1,6 @@
+<h2>Edit database</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: database_path(@conn, :update, @database) %>
+
+<%= link "Back", to: database_path(@conn, :index) %>
