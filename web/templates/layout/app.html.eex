@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <header class="header">
         <nav role="navigation" class="navbar navbar-light bg-faded">
           <div class="container-fluid">
@@ -38,7 +38,7 @@
                 <li class="nav-item btn-group">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-database"></i> Sources<b class="caret"></b></a>
                   <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item"><i class="fa fa-fw fa-database"></i> Databases</a>
+                    <a href="/databases" class="dropdown-item"><i class="fa fa-fw fa-database"></i> Databases</a>
                     <a href="#" class="dropdown-item"><i class="fa fa-fw fa-table"></i> Tables</a>
                     <a href="#" class="dropdown-item"><i class="fa fa-fw fa-css3"></i> CSS Templates</a>
                   </div>
