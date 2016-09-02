@@ -1,6 +1,5 @@
 defmodule Ironclad.PlaygroundController do
   use Ironclad.Web, :controller
-  alias Ironclad.Query, as: Query
 
   def index(conn, _params) do
     render conn, "index.html"
