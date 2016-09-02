@@ -9,7 +9,7 @@
       <th>Port</th>
       <th>Username</th>
       <th>Password</th>
-
+      <th>Database</th>
 
 
       <th></th>
@@ -24,6 +24,7 @@
       <td><%= database.port %></td>
       <td><%= database.username %></td>
       <td><%= database.password %></td>
+      <td><%= database.database %></td>
 
 
 

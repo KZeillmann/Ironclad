@@ -9,6 +9,7 @@ defmodule Ironclad.Repo.Migrations.CreateDatabase do
       add :password, :string
       add :port, :integer
       add :location, :string
+      add :database, :string
 
       timestamps()
     end

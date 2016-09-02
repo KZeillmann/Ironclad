@@ -8,6 +8,7 @@ defmodule Ironclad.Database do
     field :password, :string
     field :port, :integer
     field :location, :string
+    field :database, :string
 
     timestamps()
   end
@@ -17,7 +18,7 @@ defmodule Ironclad.Database do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:type, :name, :username, :password, :port, :location])
-    |> validate_required([:type, :name, :username, :password, :port, :location])
+    |> cast(params, [:type, :name, :username, :password, :port, :location, :database])
+    |> validate_required([:type, :name, :username, :password, :port, :location, :database])
   end
 end
