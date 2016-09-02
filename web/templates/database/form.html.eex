@@ -18,15 +18,9 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :username, class: "control-label" %>
-    <%= text_input f, :username, class: "form-control" %>
-    <%= error_tag f, :username %>
-  </div>
-
-  <div class="form-group">
-    <%= label f, :password, class: "control-label" %>
-    <%= text_input f, :password, class: "form-control" %>
-    <%= error_tag f, :password %>
+    <%= label f, :location, class: "control-label" %>
+    <%= text_input f, :location, class: "form-control" %>
+    <%= error_tag f, :location %>
   </div>
 
   <div class="form-group">
@@ -36,9 +30,15 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :location, class: "control-label" %>
-    <%= text_input f, :location, class: "form-control" %>
-    <%= error_tag f, :location %>
+    <%= label f, :username, class: "control-label" %>
+    <%= text_input f, :username, class: "form-control" %>
+    <%= error_tag f, :username %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :password, class: "control-label" %>
+    <%= text_input f, :password, class: "form-control" %>
+    <%= error_tag f, :password %>
   </div>
 
   <div class="form-group">

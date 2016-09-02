@@ -13,6 +13,16 @@
   </li>
 
   <li>
+    <strong>Location:</strong>
+    <%= @database.location %>
+  </li>
+
+  <li>
+    <strong>Port:</strong>
+    <%= @database.port %>
+  </li>
+  
+  <li>
     <strong>Username:</strong>
     <%= @database.username %>
   </li>
@@ -22,15 +32,9 @@
     <%= @database.password %>
   </li>
 
-  <li>
-    <strong>Port:</strong>
-    <%= @database.port %>
-  </li>
 
-  <li>
-    <strong>Location:</strong>
-    <%= @database.location %>
-  </li>
+
+
 
 </ul>
 
